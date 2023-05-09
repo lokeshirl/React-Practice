@@ -1,9 +1,9 @@
 import './App.css'
-import Counter from './components/Counter';
+import Home from './pages/home';
 function App() {
   return (
     <>
-      <Counter></Counter>
+      <Home />
     </>
   );
 }

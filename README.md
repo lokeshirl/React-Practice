@@ -1,7 +1,41 @@
 # Switch Branch to see different assignments and mini projects
 
-## ZEROth ASSIGNMENT
+## Chapter 2 -   Components - JSX and Props
 
-* COUNTER APP
+ 
+- **Assignment 1** :  Create a simple React app for **RESUME Builder**. It will be static website. You have to make components like **Resume** as top level and under it - **Skills**, **Education**, **Experience** etc as components.  All resume data will be under 1 big JavaScript object like which you can us in components via props. You can fix the number of items in **Skills**, **Education**, **Experience** or any section. Example you can say that only 3 experience items is allowed.
 
-![counter app image](public\Readme-Images\counter-app-png.png "counter app")
+  ```js 
+   resume = {
+      experience : [ { year:2012, company:'xyz', role:'something' }],
+      education:[ ],
+      skills : [ 'react js', 'node js']
+      .....
+      ...
+      }
+  ```
+
+   > You can choose any simple HTML layout and convert it to React Components 
+ 
+   Example Link : [ Resume HTML ](https://codepen.io/emzarts/pen/OXzmym)
+
+  ### Special Assignments ==============
+
+- **Assignment 2** : Create a Parent Component called **Border** which can provide some CSS border to any component nested into it. [Hint : You will need to use `children` props here
+  ```jsx
+   < Border> 
+         < Component > 
+   < Border />
+  ```
+]
+---
+
+## Solution of Assignment - 1
+
+### **Resume Builder**
+
+![Resume-app-ch-1-assignment-1](public\Readme-Images\resume-chapter-1-assignment-1.png "resume-app")
+
+## Solution of Assignment - 2
+
+I already know solution of this no need to do this assignment
