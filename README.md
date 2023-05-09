@@ -1,33 +1,41 @@
 # Switch Branch to see different assignments and mini projects
 
-## Chapter 1 - Introduction to React & Setup
+## Chapter 2 -   Components - JSX and Props
 
-  
-- **Assignment 1** : If we delete `node_modules`. How to run our app again successfully ?
+ 
+- **Assignment 1** :  Create a simple React app for **RESUME Builder**. It will be static website. You have to make components like **Resume** as top level and under it - **Skills**, **Education**, **Experience** etc as components.  All resume data will be under 1 big JavaScript object like which you can us in components via props. You can fix the number of items in **Skills**, **Education**, **Experience** or any section. Example you can say that only 3 experience items is allowed.
 
+  ```js 
+   resume = {
+      experience : [ { year:2012, company:'xyz', role:'something' }],
+      education:[ ],
+      skills : [ 'react js', 'node js']
+      .....
+      ...
+      }
+  ```
 
-- **Assignment 2** : How to remove double `console.logs` from React ? [ it is not needed in real life to remove them, its just an assignment problem ].  [ *Hint: Some special Component at top level is of App is causing it* ]. We explore more about  - why this is needed in later videos.
+   > You can choose any simple HTML layout and convert it to React Components 
+ 
+   Example Link : [ Resume HTML ](https://codepen.io/emzarts/pen/OXzmym)
 
-### Special Assignments ==============
+  ### Special Assignments ==============
 
-- **Assignment 3** : Create a Page with multiple React Apps. Both React Apps should be independent of each other.
-
-- **Assignment 4** : Try to build a react app using other toolchains like `Vite`
-
-## Solution of Chapter - 1
-
-- **Assignment 1** : If we delete `node_module`. we can not run our application again, if we want to run our application we need to install node modules using command `npm install` this will install required node modules (refered from package.json)
-
-- **Assignment 2** : Double console.log is beacuse of 
-`<React.StrictMode>` in main.jsx
-```javascript
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
-```
-
-
-
+- **Assignment 2** : Create a Parent Component called **Border** which can provide some CSS border to any component nested into it. [Hint : You will need to use `children` props here
+  ```jsx
+   < Border> 
+         < Component > 
+   < Border />
+  ```
+]
 ---
+
+## Solution of Assignment - 1
+
+### **Resume Builder**
+
+![Resume-app-ch-1-assignment-1](public\Readme-Images\resume-chapter-1-assignment-1.png "resume-app")
+
+## Solution of Assignment - 2
+
+I already know solution of this no need to do this assignment
