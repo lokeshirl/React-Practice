@@ -18,7 +18,7 @@ function Counter() {
                 setNumber(0);
             }}
             >
-                Add
+                Reset
             </button>
         </>
     );
